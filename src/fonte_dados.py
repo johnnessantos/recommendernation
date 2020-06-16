@@ -1,7 +1,10 @@
 import os
 import sys
+import pickle
+import bz2
 
 import pandas as pd
+
 
 class FonteDados():
     def __init__(self):
@@ -23,8 +26,10 @@ class FonteDados():
         --------
             X: DataFrame
         """
+        with bz2.BZ2File(os.path.join(self.diretorio_dados, 'dados.pkl'), 'rb') as f:
+            return pickle.load(f)
 
-        return pd.read_csv(os.path.join(self.diretorio_dados, 'estaticos_market.csv'), index_col=0)
+        #return pd.read_csv(os.path.join(self.diretorio_dados, 'estaticos_market.csv'), index_col=0)
 
     def carregar_portifolio(self, portifolio=1):
         """
