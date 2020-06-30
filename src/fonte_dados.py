@@ -74,3 +74,19 @@ class FonteDados():
                 DataFrame com os dodos de `dados_fonte` de acordo com os ids de `portifolio_ids`
         """
         return dados_fonte[dados_fonte.id.isin(portifolio_ids)].copy()
+
+
+    def carregar_dados_localizacao(self):
+        """
+        Carrega dos dados de latitute e longitude por microrregião se baseando na média dos múnicipios
+        que fazem parte da microrregião.
+        Parâmetros:
+        ----------
+            None
+        Retornos:
+        --------
+            df: DataFrame
+                Dataframe com as microrregiões e sua latitude e longitude
+        """
+        return pd.read_csv(os.path.join(self.diretorio_saida, 'localizacao-microrregiao-brasil.csv'))
+        
