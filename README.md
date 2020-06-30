@@ -7,7 +7,7 @@ Projeto realizado na aceleração data science [codenation](https://www.codenati
 
 <p align="center">
     <a href="#readme">
-        <img alt="Loguru logo" src="docs/demo.gif" style="max-width:100%;">
+        <img alt="RecommenderNation" src="docs/demo.gif" style="max-width:100%;">
     </a>
 </p>
 
