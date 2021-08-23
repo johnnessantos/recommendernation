@@ -38,7 +38,7 @@ jupyter==1.0.0
 jupyter-client==5.2.4
 jupyter-console==6.0.0
 jupyter-core==4.4.0
-jupyterlab==2.1.4
+jupyterlab==2.2.10
 jupyterlab-server==1.1.5
 kiwisolver==1.1.0
 lazy-object-proxy==1.4.3
